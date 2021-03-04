@@ -6,7 +6,7 @@ VERSION
     1.0
     
 AUTHOR
-	Cristina
+	Cristina Sotomayor
     
 DESCRIPTION
 	Make the reverse complement of DNA sequence
