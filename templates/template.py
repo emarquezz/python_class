@@ -1,5 +1,8 @@
 '''
-##  Name: [Name]
+
+##  Name:
+        [programName].py
+
 ##  Version: [#.#]
 
 ##  Author:
@@ -24,5 +27,14 @@
 
 ## Output:
         [files]
+        
+## Examples
+        [Example 1: describe the example, input and outputs]
 
 '''
+
+## 1. [ Describe the step 1 ]
+
+## 2. [ Describe the step 2 ]
+
+
