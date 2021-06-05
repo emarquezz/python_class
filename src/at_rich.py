@@ -30,6 +30,9 @@
 ## Output:
         prints AT rich regions or characters that are not ATCG
 
+## GitHub
+        https://github.com/CrisSotomayor/python_class/blob/master/src/at_rich.py
+
 ## Examples
         Insert DNA sequence: ATATATATCGATG
             Region (0, 7) is AT rich: ATATATAT
