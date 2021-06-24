@@ -72,8 +72,8 @@ def find_orfs(seq):
         for m in re.finditer("AUG", seq):
             pos_start =  m.start()
             # iter over stop codons
-            for n in re.finditer(r"(UAA|UAG|UGA)", seq):
-                pos_stop = n.start()
+            for n in re.finditer(r"(UAA|UAG|UGA)", seq[pos_start:]):
+                pos_stop = n.start() + pos_start 
                 if pos_start%3 == pos_stop%3: # same reading frame
                     print(f"Open reading frame found at ({pos_start}, {pos_stop+2})")
                     print(f"Protein sequence is {rna_to_protein(seq[pos_start:pos_stop+3], 0)}")

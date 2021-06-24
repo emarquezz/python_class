@@ -98,7 +98,7 @@ print(" This program has the following options: \n"
 
 keep_going = 'y' # option to exit later
 while(keep_going == 'y'):
-    option = int(input("What would you like to do? [1/2/3/4/5]"))
+    option = int(input("\nWhat would you like to do? [1/2/3/4/5]"))
     # Transcribe sequence
     if option == 1:
         if type != "dna": # Verify correct type
@@ -135,4 +135,4 @@ while(keep_going == 'y'):
             print("This option is only valid for RNA sequences. \n")
         find_orfs(seq)
 
-    keep_going = input("Would you like to try another option? [y/n]")
+    keep_going = input("\nWould you like to try another option? [y/n]")
