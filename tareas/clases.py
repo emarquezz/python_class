@@ -24,7 +24,8 @@
 '''
 import re
 
-class secuencia():
+
+class Secuencia():
     def __init__(self, secuencia):
         self.secuencia = secuencia
         self.longitud = len(secuencia)
@@ -41,7 +42,8 @@ class secuencia():
         self.longitud = len(self.secuencia)
         return
 
-class dna(secuencia):
+
+class DNA(Secuencia):
     tipo = 'DNA'
 
     def imprimir(self):
@@ -53,7 +55,8 @@ class dna(secuencia):
             print(self.secuencia.upper())
         return
 
-class rna(secuencia):
+
+class RNA(Secuencia):
     tipo = 'RNA'
 
     def imprimir(self):
@@ -69,34 +72,34 @@ class rna(secuencia):
 
 # Ejemplo de uso
 
-seq1 = 'ATCGATCGTTTAG' # Secuencia de DNA
-seq2 = 'AUCGAUCGGGAUC' # Secuencia de RNA
+seq1 = 'ATCGATCGTTTAG'  # Secuencia de DNA
+seq2 = 'AUCGAUCGGGAUC'  # Secuencia de RNA
 
 # Clase secuencia maneja ambos tipos
-s1 = secuencia(seq1)
+s1 = Secuencia(seq1)
 s1.imprimir()
 
-s2 = secuencia(seq2)
+s2 = Secuencia(seq2)
 s2.imprimir()
 
 s1.extender('AUC')
 s1.imprimir()
 
 # Clase dna maneja DNA, pero hereda funcion de extender
-dna1 = dna(seq1)
+dna1 = DNA(seq1)
 dna1.imprimir()
 
-dna2 = dna(seq2)
+dna2 = DNA(seq2)
 dna2.imprimir()
 
 dna1.extender('ATG')
 dna1.imprimir()
 
 # Clase rna maneja RNA, igual hereda funcion de extender
-rna1 = rna(seq1)
+rna1 = RNA(seq1)
 rna1.imprimir()
 
-rna2 = rna(seq2)
+rna2 = RNA(seq2)
 rna2.imprimir()
 
 rna2.extender('AUG')
